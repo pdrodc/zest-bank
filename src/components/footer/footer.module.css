@@ -1,0 +1,96 @@
+.wrapperFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--chartreuse);
+    background-color: var(--color-text);
+    height: 15vh;
+}
+
+.logo {
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--white);
+    padding: 20px;
+}
+
+.copyright {
+    color: var(--white);
+    padding: 20px;
+}
+
+.copyrightLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.copyrightLinks a {
+    color: var(--white);
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.copyrightLinks a:hover {
+    color: var(--chartreuse);
+}
+
+.linksFooterNav a{
+    color: var(--white);
+}
+
+.linksFooterNav a:hover {
+    color: var(--chartreuse);
+}
+
+.socialMediaUl {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.socialMediaUl a {
+    color: var(--white);
+    padding: 10px;
+}
+
+.socialMediaUl a:hover {
+    color: var(--chartreuse);
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--chartreuse);
+    color: var(--gun-metal);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--gun-metal);
+    color: var(--chartreuse);
+    border: 1px solid var(--chartreuse);
+}
+
+.Title {
+    color: var(--chartreuse);
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .wrapperFooter {
+        flex-direction: column;
+        gap: 10px;
+        border-top: 1px solid var(--chartreuse);
+        background-color: var(--color-text);
+        height: 30vh;
+    }
+}

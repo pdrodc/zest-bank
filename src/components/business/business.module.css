@@ -1,0 +1,101 @@
+.Business {
+  background-color: var(--gun-metal);
+  padding: 120px 20px; 
+}
+.wrapperBusiness {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.businessContent {
+  max-width: 46ch;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.businessContent span {
+  color: var(--chartreuse);
+}
+
+.businessContent p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #808080;
+  padding: 10px 0;
+}
+
+.businessContent button {
+  background-color: var(--chartreuse);
+  cursor: pointer;
+  color: var(--gun-metal);
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  padding: 15px;
+  width: 250px;
+}
+
+.businessContent button:hover {
+  background-color: var(--gun-metal);
+  color: var(--chartreuse);
+  transition: all 0.3s ease-in;
+  border: 1px solid var(--chartreuse);
+}
+
+.businessContent a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-decoration: solid;
+  color: var(--chartreuse);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.businessContent a:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in;
+}
+
+.businessContent a svg:hover {
+  margin-left: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapperBusiness img {
+  width: 30%;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrapperBusiness {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .wrapperBusiness img {
+    width: 50%;
+  }
+  .businessContent {
+    text-align: center;
+    width: 75%;
+  }
+  .businessContent h2 {
+    font-size: 2.5rem;
+  }
+  .wrapperBusiness button {
+    width: 50%;
+  } 
+  .wrapperBusiness a {
+    display: none;
+  }
+}

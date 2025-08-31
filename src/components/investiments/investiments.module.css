@@ -1,0 +1,89 @@
+.investiments {
+  overflow: fixed;
+  padding-bottom: 2rem;
+}
+
+.wrapperInvestiments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.wrapperInvestiments img {
+  width: 25%;
+  padding: 2rem;
+}
+
+.wrapperInvestiments img:hover {
+  animation: rotate 2s ease infinite;
+}
+
+.investimentsContent {
+  max-width: 46ch;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.investimentsContent span {
+  color: var(--chartreuse);
+}
+
+.investimentsContent p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #808080;
+  padding: 10px 0;
+}
+
+.wrapperInvestiments button {
+  background-color: var(--chartreuse);
+  cursor: pointer;
+  color: var(--gun-metal);
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  padding: 15px;
+  width: 250px;
+}
+
+.wrapperInvestiments button:hover {
+  background-color: var(--gun-metal);
+  color: var(--chartreuse);
+  transition: all 0.3s ease-in;
+  border: 1px solid var(--chartreuse);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapperInvestiments {
+    flex-direction: column;
+  }
+  .wrapperInvestiments img {
+    width: 50%;
+  }
+  .investimentsContent {
+    text-align: center;
+    width: 75%;
+  }
+  .investimentsContent h2 {
+    font-size: 2.5rem;
+  }
+  .wrapperInvestiments button {
+    width: 50%;
+  }
+}

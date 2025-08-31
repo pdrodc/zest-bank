@@ -1,0 +1,85 @@
+.chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--chartreuse);
+  color: var(--gun-metal);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+  z-index: 1000;
+}
+
+.chatButton:hover {
+  background: var(--gun-metal);
+  color: var(--chartreuse);
+  transform: scale(1.05);
+}
+
+.chatBox {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chatHeader {
+  background: var(--chartreuse);
+  color: var(--gun-metal);
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chatBody {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  overflow-y: auto;
+}
+
+.chatFooter {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.sendButton {
+  background: var(--chartreuse);
+  color: var(--gun-metal);
+  border: none;
+  padding: 8px 12px;
+  margin-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sendButton:hover {
+  background: var(--gun-metal);
+  color: var(--chartreuse);
+}
